@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"\\(Get-Content 'C:\\\\Users\\\\Jvala\\\\OneDrive\\\\Pictures\\\\SITES M2BLACK\\\\Concretta\\\\index \\(1\\).html' | Measure-Object -Line\\).Lines\")",
+      "Bash(node convert-images.mjs)",
+      "Bash(npx --yes serve -l 8000 .)",
+      "Bash(curl -sf -o /dev/null http://localhost:8000/index.html)",
+      "Bash(curl -sI http://localhost:8000/img/logo.webp)",
+      "Bash(node convert-logo.mjs)",
+      "Bash(curl -sI http://localhost:8000/index.html)",
+      "Bash(curl -sI http://localhost:8000/img/logo-light.webp)",
+      "Bash(curl -sI http://localhost:8000/img/rodrigo-aguiar.webp)",
+      "Bash(curl -sI http://localhost:8000/)",
+      "Bash(awk '{print $9, \"\\(\"$5\" bytes\\)\"}')",
+      "Bash(grep -v \"^$\")",
+      "Bash(mv \"617f1190-c4ba-4cfe-ae23-17dad474e152.jpg\" _arquivos-originais/)",
+      "Bash(mv \"REUNIÃO DE ONBOARDING - Grupo Concretta LTDA - 2026_04_27 17_36 GMT-03_00 - Anotações do Gemini.pdf\" _arquivos-originais/)",
+      "Bash(mv \"logo concretta.jpg\" _arquivos-originais/)",
+      "Bash(mv \"index \\(1\\).html\" _arquivos-originais/)",
+      "Bash(mv \"convert-images.mjs\" _arquivos-originais/)"
+    ]
+  }
+}
