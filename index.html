@@ -1,0 +1,2775 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5NL6N28Z');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="theme-color" content="#0B1219" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Grupo Concretta · Engenharia Elétrica" />
+  <meta name="keywords" content="engenharia elétrica industrial, subestação, SPDA, aterramento, projeto elétrico industrial, adequação elétrica, manutenção elétrica industrial, engenharia elétrica para indústrias, Fortaleza, Grupo Concretta" />
+
+  <!-- SEO Primary -->
+  <title>Grupo Concretta · Engenharia elétrica para indústrias, comércios e edifícios</title>
+  <meta name="description" content="Engenharia elétrica industrial: projetos, subestações, SPDA, aterramento e adequações elétricas para empresas que precisam de segurança técnica, conformidade e continuidade operacional. Mais de 10 anos no mercado." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Grupo Concretta" />
+  <meta property="og:title" content="Engenharia elétrica para empresas que não podem correr o risco de parar." />
+  <meta property="og:description" content="Projetos, subestações, SPDA, aterramento e adequações elétricas para indústrias, comércios e edifícios. Segurança técnica, conformidade e continuidade operacional." />
+  <meta property="og:image" content="img/hero.webp" />
+  <meta property="og:image:secure_url" content="img/hero.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Equipe técnica do Grupo Concretta em obra industrial" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Engenharia elétrica para empresas que não podem correr o risco de parar." />
+  <meta name="twitter:description" content="Projetos, subestações, SPDA, aterramento e adequações elétricas para indústrias, comércios e edifícios. Segurança técnica e continuidade operacional." />
+  <meta name="twitter:image" content="img/hero.webp" />
+  <meta name="twitter:image:alt" content="Equipe técnica do Grupo Concretta em obra industrial" />
+
+  <link rel="icon" type="image/webp" href="img/logo.webp" />
+  <link rel="apple-touch-icon" href="img/logo.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================================================
+       CSS CUSTOM PROPERTIES — Paleta Grupo Concretta
+       Extraída da logo: laranja vibrante + grafite técnico
+    ============================================================ */
+    :root {
+      /* Orange — destaque (cor de energia/alerta técnico da logo) */
+      --orange:        #F26522;
+      --orange-light:  #FF7A3D;
+      --orange-dark:   #D44E13;
+      --orange-soft:   rgba(242, 101, 34, 0.12);
+      --orange-glow:   rgba(242, 101, 34, 0.32);
+
+      /* Graphite — estrutural (texto da logo) */
+      --graphite:        #1F2A3A;
+      --graphite-deep:   #141C28;
+      --graphite-darker: #0B1219;
+      --graphite-soft:   #2A3441;
+      --graphite-hover:  #25303F;
+
+      /* Neutros técnicos */
+      --white:    #FFFFFF;
+      --off:      #F7F8FA;
+      --gray-50:  #F2F4F7;
+      --gray-100: #E5E8ED;
+      --gray-200: #CCD2DB;
+      --gray-400: #8C95A3;
+      --gray-500: #5E6878;
+      --gray-700: #2E384B;
+      --black:    #07101A;
+
+      /* Tokens */
+      --font-main:    'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --radius-btn:   4px;
+      --radius-card:  8px;
+      --transition:   0.3s ease;
+      --shadow-sm:    0 2px 8px rgba(11, 18, 25, 0.08);
+      --shadow-md:    0 8px 24px rgba(11, 18, 25, 0.14);
+      --shadow-lg:    0 20px 56px rgba(11, 18, 25, 0.26);
+      --shadow-xl:    0 32px 80px rgba(11, 18, 25, 0.42);
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { overflow-x: hidden; max-width: 100vw; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-main);
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--graphite-darker);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img { max-width: 100%; display: block; height: auto; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { font-family: inherit; }
+
+    ::selection { background: var(--orange); color: var(--white); }
+
+    /* ============================================================
+       UTILITY CLASSES
+    ============================================================ */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 2px;
+      background: var(--orange);
+    }
+    .section-title {
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 800;
+      letter-spacing: -0.6px;
+      line-height: 1.16;
+      color: var(--graphite-darker);
+    }
+    .section-title em {
+      font-style: normal;
+      color: var(--orange);
+    }
+    .section-subtitle {
+      font-size: clamp(15px, 1.6vw, 17px);
+      line-height: 1.7;
+      margin-top: 16px;
+      max-width: 720px;
+      color: var(--gray-700);
+    }
+
+    /* Buttons — visual técnico, baixo arredondamento */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 30px;
+      font-family: var(--font-main);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      border-radius: var(--radius-btn);
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
+      white-space: nowrap;
+      line-height: 1.2;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(11, 18, 25, 0.24); }
+    .btn:active { transform: translateY(0); }
+    .btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2.4; }
+
+    .btn-primary {
+      background: linear-gradient(120deg, var(--orange-dark) 0%, var(--orange) 25%, var(--orange-light) 50%, var(--orange) 75%, var(--orange-dark) 100%);
+      background-size: 300% 100%;
+      background-position: 0% 50%;
+      color: var(--white);
+      border-color: transparent;
+      animation: btnGradientShift 6s ease-in-out infinite;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.32) 50%, transparent 100%);
+      transform: translateX(-110%);
+      transition: transform 0.7s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .btn-primary > * { position: relative; z-index: 2; }
+    .btn-primary:hover {
+      animation-duration: 2.4s;
+      box-shadow: 0 14px 32px var(--orange-glow);
+    }
+    .btn-primary:hover::after { transform: translateX(110%); }
+    @keyframes btnGradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50%      { background-position: 100% 50%; }
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--graphite-darker);
+      border-color: var(--white);
+    }
+
+    .btn-dark {
+      background: var(--graphite-darker);
+      color: var(--white);
+      border-color: var(--graphite-darker);
+    }
+    .btn-dark:hover {
+      background: var(--graphite);
+      border-color: var(--graphite);
+    }
+
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ============================================================
+       TOP BANNER — faixa técnica
+    ============================================================ */
+    .top-banner {
+      background: var(--graphite-darker);
+      color: var(--white);
+      padding: 11px 20px;
+      text-align: center;
+      font-size: clamp(10.5px, 1.4vw, 12.5px);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      line-height: 1.4;
+      border-bottom: 1px solid rgba(242, 101, 34, 0.3);
+    }
+    .top-banner strong { color: var(--orange); font-weight: 800; }
+
+    /* ============================================================
+       1. HERO
+    ============================================================ */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 72px 24px 88px;
+      background:
+        linear-gradient(180deg, rgba(11, 18, 25, 0.88) 0%, rgba(20, 28, 40, 0.92) 100%),
+        url('img/hero.webp') center/cover no-repeat;
+      color: var(--white);
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at top, transparent 0%, rgba(11, 18, 25, 0.45) 100%),
+        repeating-linear-gradient(90deg, transparent 0 80px, rgba(242,101,34,0.025) 80px 81px);
+      pointer-events: none;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 960px; width: 100%; }
+
+    .hero-logo-img {
+      width: clamp(180px, 28vw, 240px);
+      height: auto;
+      margin: 0 auto 36px;
+      display: block;
+      filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.5));
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 24px;
+      padding: 9px 18px;
+      border: 1px solid rgba(242, 101, 34, 0.45);
+      border-radius: 100px;
+      background: rgba(242, 101, 34, 0.07);
+    }
+    .hero-headline {
+      font-size: clamp(30px, 5.4vw, 60px);
+      font-weight: 800;
+      letter-spacing: -1.2px;
+      line-height: 1.06;
+      margin-bottom: 22px;
+      color: var(--white);
+    }
+    .hero-headline em {
+      color: var(--orange);
+      font-style: normal;
+    }
+    .hero-subheadline {
+      font-size: clamp(15px, 1.9vw, 19px);
+      font-weight: 400;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 720px;
+      margin: 0 auto 38px;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Scroll indicator */
+    .hero-scroll {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      opacity: 0.55;
+      color: var(--white);
+      animation: bounce 2.2s infinite;
+      font-weight: 700;
+    }
+    .hero-scroll svg { width: 20px; height: 20px; stroke: var(--orange); }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%      { transform: translateX(-50%) translateY(8px); }
+    }
+
+    /* Barra de prova social */
+    .social-proof {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      flex-wrap: wrap;
+    }
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .proof-icon {
+      width: 46px;
+      height: 46px;
+      background: rgba(242, 101, 34, 0.12);
+      border: 1px solid rgba(242, 101, 34, 0.32);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .proof-icon svg { width: 22px; height: 22px; stroke: var(--orange); fill: none; stroke-width: 2; }
+    .proof-number {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.1;
+      letter-spacing: -0.3px;
+    }
+    .proof-label {
+      font-size: 10.5px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 600;
+    }
+    .proof-text { display: flex; flex-direction: column; text-align: left; }
+
+    /* ============================================================
+       2. AUTORIDADE — 3 pilares
+    ============================================================ */
+    .authority {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: var(--graphite-darker);
+    }
+    .authority-col {
+      padding: 52px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      position: relative;
+      transition: background var(--transition);
+    }
+    .authority-col:nth-child(1) { background: var(--graphite-darker); }
+    .authority-col:nth-child(2) { background: var(--graphite-deep); }
+    .authority-col:nth-child(3) { background: var(--graphite-darker); }
+    .authority-col:hover { background: var(--graphite-soft); }
+    .authority-col::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 56px;
+      height: 3px;
+      background: var(--orange);
+    }
+    .authority-icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(242, 101, 34, 0.12);
+      border: 1px solid rgba(242, 101, 34, 0.32);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .authority-icon svg { width: 26px; height: 26px; stroke: var(--orange); fill: none; stroke-width: 2; }
+    .authority-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--orange);
+    }
+    .authority-text {
+      font-size: clamp(19px, 2.2vw, 23px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.3;
+      letter-spacing: -0.3px;
+    }
+    .authority-desc {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       3. SEÇÃO DOR — risco de negligenciar
+    ============================================================ */
+    .pain {
+      padding: clamp(48px, 6.5vw, 76px) 24px;
+      background: var(--off);
+    }
+    .pain-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 36px;
+    }
+    .pain-header .section-subtitle { margin-left: auto; margin-right: auto; }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .pain-card {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-left: 3px solid var(--orange);
+      border-radius: var(--radius-card);
+      padding: 32px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    }
+    .pain-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-left-color: var(--orange-dark);
+    }
+    .pain-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--orange-soft);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .pain-icon svg { width: 24px; height: 24px; stroke: var(--orange); fill: none; stroke-width: 2; }
+    .pain-card h3 {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--graphite-darker);
+      letter-spacing: -0.2px;
+    }
+    .pain-card p {
+      font-size: 14.5px;
+      color: var(--gray-700);
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       4. SOLUÇÃO
+    ============================================================ */
+    .solution {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      background: var(--graphite-darker);
+      color: var(--white);
+    }
+    .solution-image {
+      position: relative;
+      background: var(--graphite-deep);
+      overflow: hidden;
+      min-height: 520px;
+    }
+    .solution-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.88;
+    }
+    .solution-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent 50%, rgba(11,18,25,0.85) 100%);
+    }
+    .solution-badge {
+      position: absolute;
+      bottom: 32px;
+      left: 32px;
+      background: var(--orange);
+      color: var(--white);
+      padding: 16px 22px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+      z-index: 2;
+    }
+    .solution-badge strong {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -0.3px;
+    }
+    .solution-badge span {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      opacity: 0.95;
+    }
+    .solution-text {
+      padding: 88px 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 22px;
+    }
+    .solution-text .section-title { color: var(--white); }
+    .solution-text p {
+      font-size: 15.5px;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.8;
+    }
+    .solution-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .solution-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .solution-check {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: var(--orange);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .solution-check svg { width: 16px; height: 16px; stroke: var(--white); fill: none; stroke-width: 3; }
+    .solution-item strong {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0;
+    }
+    .solution-item p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.65;
+      margin-top: 2px;
+    }
+
+    /* ============================================================
+       5. SERVIÇOS — cards técnicos
+    ============================================================ */
+    .services {
+      padding: clamp(52px, 7vw, 78px) 24px;
+      background: var(--white);
+    }
+    .services-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 36px;
+    }
+    .services-header .section-title { font-size: clamp(22px, 3vw, 30px); }
+    .services-header .section-subtitle { margin-left: auto; margin-right: auto; font-size: 14.5px; margin-top: 10px; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--radius-card);
+      padding: 22px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--graphite-darker);
+      transition: background var(--transition);
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(242, 101, 34, 0.3);
+    }
+    .service-card:hover::before { background: var(--orange); }
+    .service-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--orange-soft);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .service-icon svg { width: 22px; height: 22px; stroke: var(--orange); fill: none; stroke-width: 2; }
+    .service-card h3 {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: var(--graphite-darker);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .service-card p {
+      font-size: 13.5px;
+      color: var(--gray-700);
+      line-height: 1.6;
+    }
+
+    /* ============================================================
+       6. DIFERENCIAIS
+    ============================================================ */
+    .differentials {
+      padding: clamp(48px, 6.5vw, 76px) 24px;
+      background:
+        linear-gradient(180deg, var(--graphite-darker) 0%, var(--graphite-deep) 100%);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    .differentials::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(242, 101, 34, 0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .differentials .container { position: relative; z-index: 1; }
+    .differentials .section-title { color: var(--white); }
+    .differentials-header { text-align: center; max-width: 720px; margin: 0 auto 36px; }
+    .differentials-header .section-subtitle { color: rgba(255, 255, 255, 0.72); margin-left: auto; margin-right: auto; }
+    .differentials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .diff-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-card);
+      padding: 32px 30px;
+      display: flex;
+      gap: 22px;
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+    }
+    .diff-card:hover {
+      background: rgba(242, 101, 34, 0.06);
+      border-color: rgba(242, 101, 34, 0.25);
+      transform: translateY(-3px);
+    }
+    .diff-number {
+      flex-shrink: 0;
+      font-size: 30px;
+      font-weight: 900;
+      color: var(--orange);
+      letter-spacing: -1px;
+      line-height: 1;
+      width: 56px;
+    }
+    .diff-content h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .diff-content p {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       7. GALERIA - carrossel de obras
+    ============================================================ */
+    .gallery {
+      padding: clamp(48px, 6.5vw, 76px) 24px;
+      background: var(--off);
+      text-align: center;
+    }
+    .gallery .section-subtitle { margin: 12px auto 32px; }
+    .carousel-wrapper {
+      position: relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 8px;
+    }
+    .carousel-viewport {
+      overflow: hidden;
+      border-radius: var(--radius-card);
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      gap: 20px;
+    }
+    .carousel-slide {
+      flex: 0 0 calc((100% - 40px) / 3);
+      aspect-ratio: 4 / 3;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      background: var(--graphite-darker);
+    }
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .carousel-slide:hover img { transform: scale(1.06); }
+    .carousel-caption {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: 22px 18px 14px;
+      background: linear-gradient(180deg, transparent 0%, rgba(11,18,25,0.92) 100%);
+      color: var(--white);
+      text-align: left;
+      pointer-events: none;
+    }
+    .carousel-caption span {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 4px;
+    }
+    .carousel-caption strong {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      line-height: 1.35;
+      display: block;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      background: var(--orange);
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .carousel-btn:hover { background: var(--orange-dark); transform: translateY(-50%) scale(1.08); }
+    .carousel-btn svg { width: 20px; height: 20px; stroke: var(--white); stroke-width: 3; fill: none; }
+    .carousel-prev { left: -20px; }
+    .carousel-next { right: -20px; }
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 32px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(11, 18, 25, 0.18);
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition), width var(--transition);
+    }
+    .dot.active { background: var(--orange); transform: scale(1.1); width: 28px; border-radius: 6px; }
+
+    /* ============================================================
+       8. PROCESSO
+    ============================================================ */
+    .process {
+      padding: clamp(48px, 6.5vw, 76px) 24px;
+      background: var(--white);
+    }
+    .process-header { text-align: center; max-width: 720px; margin: 0 auto 36px; }
+    .process-header .section-subtitle { margin-left: auto; margin-right: auto; }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .process-grid::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gray-200) 0%, var(--orange) 50%, var(--gray-200) 100%);
+      opacity: 0.4;
+      z-index: 0;
+    }
+    .process-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+    .process-num {
+      width: 56px;
+      height: 56px;
+      background: var(--graphite-darker);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 900;
+      border: 4px solid var(--white);
+      box-shadow: 0 6px 18px rgba(11, 18, 25, 0.14);
+      transition: background var(--transition), color var(--transition);
+    }
+    .process-step:hover .process-num {
+      background: var(--orange);
+      color: var(--white);
+    }
+    .process-step h4 {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: var(--graphite-darker);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+    .process-step p {
+      font-size: 13.5px;
+      color: var(--gray-700);
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       9. PARA QUEM É - ICP filter
+    ============================================================ */
+    .icp {
+      padding: clamp(48px, 6.5vw, 76px) 24px;
+      background:
+        linear-gradient(135deg, rgba(11,18,25,0.94) 0%, rgba(20,28,40,0.96) 100%),
+        url('img/obra-comercial.webp') center/cover no-repeat;
+      background-attachment: fixed;
+      color: var(--white);
+    }
+    .icp-wrapper {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .icp-text .section-title { color: var(--white); }
+    .icp-text p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.75;
+      margin-top: 18px;
+    }
+    .icp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: rgba(242, 101, 34, 0.04);
+      border: 1px solid rgba(242, 101, 34, 0.2);
+      border-radius: var(--radius-card);
+      padding: 32px;
+    }
+    .icp-list .icp-list-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 8px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(242,101,34,0.18);
+    }
+    .icp-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.88);
+      line-height: 1.5;
+    }
+    .icp-item svg {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      stroke: var(--orange);
+      fill: none;
+      stroke-width: 3;
+      margin-top: 3px;
+    }
+
+    /* ============================================================
+       10. FAQ
+    ============================================================ */
+    .faq {
+      padding: clamp(48px, 6.5vw, 76px) 24px;
+      background: var(--white);
+    }
+    .faq .container { max-width: 820px; }
+    .faq .section-label { display: inline-flex; }
+    .faq-header { text-align: center; margin-bottom: 32px; }
+    .faq-header .section-subtitle { margin: 16px auto 0; }
+    .faq-item {
+      background: var(--off);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: box-shadow var(--transition), border-color var(--transition);
+      border: 1px solid var(--gray-100);
+    }
+    .faq-item:hover { border-color: var(--orange); }
+    .faq-item.open { background: var(--white); border-color: var(--orange); box-shadow: var(--shadow-sm); }
+    .faq-question {
+      width: 100%;
+      padding: 22px 26px;
+      background: none;
+      border: none;
+      font-family: var(--font-main);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--graphite-darker);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      line-height: 1.4;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--orange);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .faq-item.open .faq-question::after { content: '−'; }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .faq-item.open .faq-answer { max-height: 480px; }
+    .faq-answer p {
+      padding: 0 26px 22px;
+      font-size: 14.5px;
+      line-height: 1.75;
+      color: var(--gray-700);
+    }
+
+    /* ============================================================
+       11. FORMULÁRIO MULTI-STEP
+    ============================================================ */
+    .form-section {
+      padding: clamp(48px, 6.5vw, 76px) 24px;
+      background:
+        linear-gradient(135deg, var(--graphite-deep) 0%, var(--graphite-darker) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .form-section::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(242, 101, 34, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .form-section .section-title { color: var(--white); }
+    .form-section .section-subtitle { color: rgba(255, 255, 255, 0.72); margin: 12px auto 32px; }
+    .form-section .container { position: relative; z-index: 1; }
+    .form-section .section-label { color: var(--orange); }
+
+    /* Steps indicator */
+    .steps-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 44px;
+    }
+    .step-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .step-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.5);
+      transition: all var(--transition);
+    }
+    .step-circle.active   { background: var(--orange); border-color: var(--orange); color: var(--white); }
+    .step-circle.complete { background: var(--orange-dark); border-color: var(--orange-dark); color: var(--white); }
+    .step-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.45);
+      transition: color var(--transition);
+    }
+    .step-item.active .step-label   { color: var(--orange); }
+    .step-item.complete .step-label { color: var(--orange-dark); }
+    .step-connector {
+      width: 80px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.14);
+      margin-bottom: 28px;
+      position: relative;
+    }
+    .step-connector-fill {
+      position: absolute;
+      left: 0; top: 0;
+      height: 100%;
+      background: var(--orange);
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+
+    .form-card {
+      max-width: 580px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-card);
+      padding: 44px 40px;
+      backdrop-filter: blur(10px);
+    }
+    .form-step { display: none; }
+    .form-step.active { display: block; animation: fadeSlide 0.4s ease; }
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateX(16px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .form-step-title {
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    .form-step-title::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background: var(--orange);
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .form-group {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.72);
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 2px solid transparent;
+      border-radius: var(--radius-btn);
+      font-family: var(--font-main);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--graphite-darker);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+      appearance: none;
+    }
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%231F2A3A' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+    .form-group input::placeholder { color: #8a94a3; font-weight: 400; }
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(242, 101, 34, 0.22);
+    }
+    .form-group input.error,
+    .form-group select.error { border-color: #e74c3c; box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15); }
+    .error-msg {
+      font-size: 12px;
+      color: #ff8080;
+      margin-top: 6px;
+      display: none;
+      font-weight: 600;
+    }
+    .error-msg.show { display: block; }
+    .form-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .form-actions .btn { flex: 1; padding: 16px; font-size: 13px; }
+    .btn-back {
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .btn-back:hover { background: rgba(255, 255, 255, 0.15); box-shadow: none; }
+
+    .form-success {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      animation: fadeSlide 0.5s ease;
+    }
+    .form-success.show { display: flex; }
+    .success-icon {
+      width: 76px;
+      height: 76px;
+      background: var(--orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 32px var(--orange-glow);
+    }
+    .success-icon svg { width: 38px; height: 38px; stroke: var(--white); stroke-width: 3; fill: none; }
+    .form-success h3 { font-size: 22px; font-weight: 800; color: var(--white); letter-spacing: -0.3px; text-align: center; }
+    .form-success p { font-size: 15px; color: rgba(255, 255, 255, 0.78); text-align: center; line-height: 1.7; }
+
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 0.5px;
+    }
+    .trust-item svg { width: 16px; height: 16px; stroke: var(--orange); fill: none; }
+
+    /* ============================================================
+       12. FOOTER
+    ============================================================ */
+    footer {
+      position: relative;
+      padding: 72px 24px 44px;
+      text-align: center;
+      background: var(--graphite-darker);
+      color: rgba(255, 255, 255, 0.6);
+      border-top: 3px solid var(--orange);
+    }
+    .footer-logo-img {
+      width: 170px;
+      height: auto;
+      margin: 0 auto 24px;
+      display: block;
+      opacity: 0.95;
+    }
+    .footer-divider {
+      width: 40px;
+      height: 2px;
+      background: var(--orange);
+      margin: 0 auto 24px;
+    }
+    .footer-tagline {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--orange);
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .footer-info {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+    .footer-info-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .footer-info-item svg { width: 16px; height: 16px; stroke: var(--orange); fill: none; }
+    .footer-copy { font-size: 13px; margin-bottom: 10px; color: rgba(255, 255, 255, 0.65); }
+    .footer-dev {
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .footer-dev a { color: var(--orange); font-weight: 700; }
+
+    /* ============================================================
+       PAIN CTA — ponte entre dor e solução
+    ============================================================ */
+    .pain-cta {
+      max-width: 880px;
+      margin: 40px auto 0;
+      background: var(--graphite-darker);
+      color: var(--white);
+      border-radius: var(--radius-card);
+      padding: 44px 44px;
+      display: grid;
+      grid-template-columns: 1.4fr auto;
+      gap: 32px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(242, 101, 34, 0.25);
+    }
+    .pain-cta::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; bottom: 0;
+      width: 4px;
+      background: var(--orange);
+    }
+    .pain-cta-eyebrow {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+    .pain-cta-title {
+      font-size: clamp(20px, 2.4vw, 26px);
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -0.3px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .pain-cta-desc {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+    }
+    .pain-cta-desc strong { color: var(--white); font-weight: 700; }
+
+    /* ============================================================
+       ABOUT — Quem Somos (sócio + empresa)
+    ============================================================ */
+    .about {
+      padding: clamp(48px, 6.5vw, 76px) 24px;
+      background: var(--white);
+    }
+    .about-wrapper {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-photo {
+      position: relative;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4 / 5;
+      background: var(--graphite-darker);
+    }
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+    }
+    .about-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(11,18,25,0.7) 100%);
+      pointer-events: none;
+    }
+    .about-photo-tag {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      z-index: 2;
+      color: var(--white);
+      text-align: left;
+    }
+    .about-photo-tag strong {
+      display: block;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+      margin-bottom: 2px;
+    }
+    .about-photo-tag span {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--orange);
+      font-weight: 700;
+    }
+    .about-text .section-title em { color: var(--orange); }
+    .about-text > p {
+      font-size: 15.5px;
+      color: var(--gray-700);
+      line-height: 1.8;
+      margin-top: 18px;
+    }
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 32px;
+      padding-top: 32px;
+      border-top: 1px solid var(--gray-100);
+    }
+    .about-stat strong {
+      display: block;
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--orange);
+      letter-spacing: -0.6px;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .about-stat span {
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      line-height: 1.4;
+      display: block;
+    }
+
+    /* ============================================================
+       STAKES — Zona de Perda × Zona de Ganho
+    ============================================================ */
+    .stakes {
+      padding: clamp(48px, 6.5vw, 76px) 24px;
+      background: var(--off);
+    }
+    .stakes-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 52px;
+    }
+    .stakes-header .section-subtitle { margin-left: auto; margin-right: auto; }
+    .stakes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 1080px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .stakes-grid::before {
+      content: 'VS';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 56px;
+      height: 56px;
+      background: var(--white);
+      border: 2px solid var(--graphite-darker);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--graphite-darker);
+      letter-spacing: 1px;
+      z-index: 5;
+      box-shadow: var(--shadow-md);
+    }
+    .stake-card {
+      background: var(--white);
+      border-radius: var(--radius-card);
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border: 1px solid var(--gray-100);
+    }
+    .stake-loss   { border-top: 4px solid #C03A1F; }
+    .stake-gain   { border-top: 4px solid var(--orange); }
+    .stake-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .stake-loss .stake-label { color: #C03A1F; }
+    .stake-gain .stake-label { color: var(--orange); }
+    .stake-label svg { width: 18px; height: 18px; fill: none; stroke-width: 2; }
+    .stake-loss .stake-label svg { stroke: #C03A1F; }
+    .stake-gain .stake-label svg { stroke: var(--orange); }
+    .stake-card h3 {
+      font-size: clamp(19px, 2vw, 22px);
+      font-weight: 800;
+      color: var(--graphite-darker);
+      letter-spacing: -0.3px;
+      line-height: 1.3;
+    }
+    .stake-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 4px;
+    }
+    .stake-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 14.5px;
+      color: var(--gray-700);
+      line-height: 1.55;
+    }
+    .stake-item svg {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke-width: 2.6;
+      margin-top: 2px;
+    }
+    .stake-loss .stake-item svg { stroke: #C03A1F; }
+    .stake-gain .stake-item svg { stroke: var(--orange); }
+
+    /* ============================================================
+       CTA FIXO MOBILE
+    ============================================================ */
+    .mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9998;
+      padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+      background: rgba(11, 18, 25, 0.96);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(242, 101, 34, 0.25);
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+    .mobile-cta.visible { transform: translateY(0); }
+    .mobile-cta .btn { width: 100%; text-align: center; padding: 16px; font-size: 13px; }
+
+    /* ============================================================
+       RESPONSIVO — MOBILE FIRST
+    ============================================================ */
+    @media (max-width: 1100px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); max-width: 720px; }
+      .process-grid { grid-template-columns: repeat(3, 1fr); }
+      .process-grid::before { display: none; }
+    }
+    @media (max-width: 960px) {
+      .authority { grid-template-columns: 1fr; }
+      .authority-col { padding: 56px 28px; }
+      .icp-wrapper { grid-template-columns: 1fr; gap: 36px; }
+      .icp { background-attachment: scroll; }
+      .differentials-grid { grid-template-columns: 1fr; }
+      .pain-grid { grid-template-columns: 1fr; }
+      .pain-cta { grid-template-columns: 1fr; padding: 36px 32px; text-align: left; }
+      .about-wrapper { grid-template-columns: 1fr; gap: 40px; max-width: 560px; }
+      .about-photo { aspect-ratio: 4 / 3; max-height: 420px; }
+      .stakes-grid { grid-template-columns: 1fr; gap: 16px; }
+      .stakes-grid::before { display: none; }
+      .mobile-cta { display: block; }
+    }
+    @media (max-width: 680px) {
+      .container { padding: 0 18px; }
+      .hero { padding: 84px 18px 110px; }
+      .hero-eyebrow { font-size: 10px; padding: 7px 14px; letter-spacing: 2.5px; }
+      .hero-subheadline { font-size: 15px; }
+      .hero-buttons { flex-direction: column; width: 100%; max-width: 320px; margin: 0 auto; }
+      .hero-buttons .btn { width: 100%; }
+      .social-proof { gap: 22px; }
+      .proof-number { font-size: 18px; }
+      .proof-item { gap: 10px; }
+      .form-card { padding: 32px 22px; }
+      .form-actions { flex-direction: column-reverse; }
+      .form-actions .btn { width: 100%; }
+      .services-grid { grid-template-columns: 1fr; max-width: 440px; }
+      .process-grid { grid-template-columns: 1fr; }
+      .carousel-slide { flex: 0 0 100%; }
+      .carousel-prev { left: 4px; }
+      .carousel-next { right: 4px; }
+      .step-connector { width: 48px; }
+      .solution-text { padding: 48px 22px; }
+      .solution-image { min-height: 280px; }
+      .solution-badge { bottom: 18px; left: 18px; padding: 12px 16px; }
+      .solution-badge strong { font-size: 18px; }
+      .footer-info { gap: 16px; flex-direction: column; align-items: center; }
+      .pain-card { padding: 26px 22px; }
+      .diff-card { flex-direction: column; gap: 12px; padding: 26px 22px; }
+      .diff-number { width: auto; font-size: 26px; }
+    }
+    @media (max-width: 380px) {
+      .hero-headline { font-size: 28px; }
+      .section-title { font-size: 24px; }
+      .btn { padding: 14px 22px; font-size: 11.5px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NL6N28Z"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- ============================================================
+       FAIXA SUPERIOR
+  ============================================================ -->
+  <div class="top-banner" role="note">
+    Engenharia elétrica industrial · <strong>Mais de 10 anos</strong> atendendo indústrias, comércios e edifícios
+  </div>
+
+  <!-- ============================================================
+       1. HERO
+  ============================================================ -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="img/logo-light.webp" alt="Grupo Concretta · Engenharia Elétrica" class="hero-logo-img" width="240" height="180" />
+
+      <span class="hero-eyebrow">Grupo Concretta · Engenharia Elétrica Industrial</span>
+
+      <h1 class="hero-headline">
+        Sua operação protegida de <em>incêndio elétrico, parada de subestação e autuação em fiscalização.</em>
+      </h1>
+
+      <p class="hero-subheadline">
+        Engenharia elétrica industrial conduzida com <strong style="color: var(--orange); font-weight: 700;">responsabilidade técnica registrada no CREA.</strong> Projeto, subestação, SPDA, aterramento, adequação e manutenção para indústrias, comércios e edifícios que tratam continuidade operacional como prioridade do negócio.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#formulario" class="btn btn-primary">
+          Solicitar Análise Técnica
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+        <a href="#servicos" class="btn btn-outline">Ver Serviços</a>
+      </div>
+
+      <!-- Prova social -->
+      <div class="social-proof">
+        <div class="proof-item">
+          <div class="proof-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="proof-text">
+            <span class="proof-number" data-count="10">+10 anos</span>
+            <span class="proof-label">Engenharia técnica</span>
+          </div>
+        </div>
+        <div class="proof-item">
+          <div class="proof-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
+          </div>
+          <div class="proof-text">
+            <span class="proof-number">Indústrias</span>
+            <span class="proof-label">Comércios e edifícios</span>
+          </div>
+        </div>
+        <div class="proof-item">
+          <div class="proof-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <div class="proof-text">
+            <span class="proof-number">CREA · ART</span>
+            <span class="proof-label">Responsabilidade técnica</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      Rolar
+    </div>
+  </header>
+
+  <!-- ============================================================
+       2. AUTORIDADE - 3 pilares técnicos
+  ============================================================ -->
+  <section class="authority" aria-label="Pilares técnicos do Grupo Concretta">
+
+    <div class="authority-col fade-in">
+      <div class="authority-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        </svg>
+      </div>
+      <span class="authority-label">Continuidade operacional</span>
+      <p class="authority-text">Sua operação não para porque a engenharia elétrica está prevista, executada e mantida.</p>
+      <p class="authority-desc">Atuamos para reduzir o risco de parada não programada, desde o dimensionamento do projeto até a manutenção recorrente da subestação e dos quadros críticos.</p>
+    </div>
+
+    <div class="authority-col fade-in" style="transition-delay:0.12s">
+      <div class="authority-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+      </div>
+      <span class="authority-label">Conformidade técnica</span>
+      <p class="authority-text">Documentação, ART e adequação para fiscalizações do Bombeiros, MTE e concessionária.</p>
+      <p class="authority-desc">Entregamos a sua empresa em conformidade com as normas técnicas aplicáveis, com escopo claro, responsabilidade técnica e suporte para qualquer exigência futura.</p>
+    </div>
+
+    <div class="authority-col fade-in" style="transition-delay:0.24s">
+      <div class="authority-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <path d="M7 7h.01M11 7h.01M15 7h.01M7 11h.01M11 11h.01M15 11h.01M7 15h.01M11 15h.01M15 15h.01"/>
+        </svg>
+      </div>
+      <span class="authority-label">Foco industrial B2B</span>
+      <p class="authority-text">80% da nossa receita atual vem de indústrias com operação crítica.</p>
+      <p class="authority-desc">Atendemos demandas elétricas industriais, comerciais e prediais com equipe técnica preparada para o ritmo, a complexidade e a responsabilidade da operação empresarial.</p>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       3. SEÇÃO DE DOR — o custo de negligenciar
+  ============================================================ -->
+  <section class="pain fade-in">
+    <div class="container">
+      <div class="pain-header">
+        <p class="section-label">O risco invisível</p>
+        <h2 class="section-title">O custo de negligenciar a parte elétrica <em>é maior do que parece.</em></h2>
+        <p class="section-subtitle">Falhas elétricas raramente avisam. Quando aparecem, vêm acompanhadas de prejuízo financeiro, risco patrimonial e exposição à responsabilidade técnica de quem é responsável pela operação.</p>
+      </div>
+
+      <div class="pain-grid">
+
+        <div class="pain-card fade-in">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 17a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 2.5 2.5"/>
+              <path d="M12 2v3M12 21v-3"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </div>
+          <h3>Incêndio por falha elétrica</h3>
+          <p>Curto-circuito, sobrecarga, painel mal dimensionado ou ausência de SPDA podem comprometer instalações, equipamentos, estoque e, principalmente, pessoas.</p>
+        </div>
+
+        <div class="pain-card fade-in" style="transition-delay:0.08s">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 3v18h18"/>
+              <path d="M7 14l4-4 4 4 6-6"/>
+            </svg>
+          </div>
+          <h3>Parada de subestação</h3>
+          <p>Uma subestação sem manutenção pode tirar sua operação do ar por horas ou dias. O prejuízo acumulado costuma superar em muito o investimento em manutenção preventiva.</p>
+        </div>
+
+        <div class="pain-card fade-in" style="transition-delay:0.16s">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="9" y1="15" x2="15" y2="15"/>
+              <line x1="9" y1="11" x2="15" y2="11"/>
+            </svg>
+          </div>
+          <h3>Autuação em fiscalização</h3>
+          <p>Corpo de Bombeiros, Ministério do Trabalho e concessionária exigem documentação técnica e adequações que pressionam o cronograma quando deixadas para a última hora.</p>
+        </div>
+
+        <div class="pain-card fade-in" style="transition-delay:0.24s">
+          <div class="pain-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 12a9 9 0 1 0 9-9"/>
+              <polyline points="3 4 3 12 11 12"/>
+            </svg>
+          </div>
+          <h3>Retrabalho por execução defeituosa</h3>
+          <p>Projeto elétrico mal executado gera correção, atraso e custo dobrado. O dinheiro mal investido aparece na primeira ampliação, vistoria técnica ou problema operacional.</p>
+        </div>
+
+      </div>
+
+      <!-- Bloco ponte: resumo da solução Concretta + CTA -->
+      <div class="pain-cta fade-in">
+        <div>
+          <p class="pain-cta-eyebrow">A solução do Grupo Concretta</p>
+          <h3 class="pain-cta-title">Engenharia elétrica completa, executada com responsabilidade técnica.</h3>
+          <p class="pain-cta-desc">
+            Projeto elétrico, subestação, SPDA, aterramento, adequações, manutenção recorrente e carregadores elétricos para indústrias, comércios e edifícios. <strong>Diagnóstico em campo, ART emitida e foco em continuidade operacional.</strong>
+          </p>
+        </div>
+        <a href="#formulario" class="btn btn-primary">
+          Falar com Especialista
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. QUEM SOMOS
+  ============================================================ -->
+  <section class="about fade-in" id="quem-somos" aria-label="Quem é o Grupo Concretta">
+    <div class="about-wrapper">
+
+      <div class="about-photo">
+        <img loading="lazy" src="img/rodrigo-aguiar.webp" alt="Rodrigo Aguiar, sócio fundador do Grupo Concretta" width="900" height="1125" />
+        <div class="about-photo-tag">
+          <strong>Rodrigo Aguiar</strong>
+          <span>Sócio fundador · Responsável técnico</span>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p class="section-label">Quem somos</p>
+        <h2 class="section-title">Engenharia elétrica industrial conduzida por <em>quem entende de operação técnica.</em></h2>
+        <p>
+          O Grupo Concretta foi fundado em 2014 por Rodrigo Aguiar e atua com engenharia elétrica para indústrias, comércios e edifícios. Em mais de uma década, consolidamos uma operação técnica que hoje concentra cerca de 80% da receita em demandas industriais, com referências em operações de grande porte como Shopping Center Iguatemi e M. Dias Branco.
+        </p>
+        <p>
+          Trabalhamos com diagnóstico em campo, projeto, execução e manutenção recorrente, todos sob responsabilidade técnica registrada no CREA. Nossa proposta é ser o time elétrico de confiança de empresas que tratam a parte elétrica como infraestrutura crítica, não como item de menor importância.
+        </p>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <strong>2014</strong>
+            <span>Ano de fundação</span>
+          </div>
+          <div class="about-stat">
+            <strong>+10</strong>
+            <span>Anos no mercado</span>
+          </div>
+          <div class="about-stat">
+            <strong>CREA</strong>
+            <span>Responsabilidade técnica</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. SERVIÇOS — cards técnicos
+  ============================================================ -->
+  <section class="services fade-in" id="servicos">
+    <div class="container">
+      <div class="services-header">
+        <p class="section-label">Soluções elétricas técnicas</p>
+        <h2 class="section-title">Serviços técnicos para empresas que <em>não podem improvisar</em> a parte elétrica.</h2>
+        <p class="section-subtitle">Atendemos demandas preventivas, corretivas, de expansão e de adequação. Tudo com responsabilidade técnica, escopo claro e foco na continuidade da operação.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="9" y1="13" x2="15" y2="13"/>
+              <line x1="9" y1="17" x2="15" y2="17"/>
+            </svg>
+          </div>
+          <h3>Projeto Elétrico</h3>
+          <p>Projetos elétricos com dimensionamento técnico, documentação completa e ART. Base para regularização, ampliação, aprovação na concessionária e segurança da operação.</p>
+        </article>
+
+        <article class="service-card fade-in" style="transition-delay:0.08s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="6" width="18" height="14" rx="1"/>
+              <path d="M7 6V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/>
+              <line x1="12" y1="10" x2="12" y2="16"/>
+              <line x1="9" y1="13" x2="15" y2="13"/>
+            </svg>
+          </div>
+          <h3>Subestações</h3>
+          <p>Execução, adequação e manutenção de subestações para reduzir risco de parada, ampliar capacidade da operação e manter conformidade com a concessionária.</p>
+        </article>
+
+        <article class="service-card fade-in" style="transition-delay:0.16s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2L2 12h3v8h14v-8h3z"/>
+              <polyline points="13 6 9 14 13 14 11 22"/>
+            </svg>
+          </div>
+          <h3>SPDA</h3>
+          <p>Sistemas de Proteção contra Descargas Atmosféricas para proteger estrutura, equipamentos, estoque e pessoas, com aterramento dimensionado e laudo técnico.</p>
+        </article>
+
+        <article class="service-card fade-in" style="transition-delay:0.24s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2v8"/>
+              <path d="M6 8h12"/>
+              <path d="M8 14l-4 8"/>
+              <path d="M12 14v8"/>
+              <path d="M16 14l4 8"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
+          </div>
+          <h3>Aterramento</h3>
+          <p>Soluções de aterramento elétrico com medição técnica (terrômetro), para aumentar a segurança da edificação e apoiar a conformidade da operação industrial e predial.</p>
+        </article>
+
+        <article class="service-card fade-in" style="transition-delay:0.32s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1l3 5h-2v6h-2V6H9z"/>
+              <path d="M5 11a7 7 0 0 0 14 0"/>
+              <line x1="5" y1="22" x2="19" y2="22"/>
+              <line x1="12" y1="18" x2="12" y2="22"/>
+            </svg>
+          </div>
+          <h3>Adequações Elétricas</h3>
+          <p>Adequação elétrica de indústrias, comércios e edifícios para exigências do Corpo de Bombeiros, MTE e concessionária, com escopo definido e cronograma realista.</p>
+        </article>
+
+        <article class="service-card fade-in" style="transition-delay:0.40s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3>Manutenção Elétrica</h3>
+          <p>Manutenção preventiva, corretiva e preditiva para indústrias, comércios e edifícios. Reduz risco de parada não programada e custo com emergência.</p>
+        </article>
+
+        <article class="service-card fade-in" style="transition-delay:0.48s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="3" width="14" height="18" rx="2"/>
+              <line x1="5" y1="11" x2="19" y2="11"/>
+              <polyline points="11 6 13 6 12 9 14 9 11 13"/>
+            </svg>
+          </div>
+          <h3>Carregadores Elétricos</h3>
+          <p>Instalação técnica de carregadores elétricos para frotas, condomínios, edifícios e estabelecimentos comerciais, com infraestrutura dimensionada e segura.</p>
+        </article>
+
+        <article class="service-card fade-in" style="transition-delay:0.56s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Expansão e Regularização</h3>
+          <p>Apoio técnico para ampliação da capacidade elétrica, regularização junto à concessionária e adequação da infraestrutura para novos equipamentos ou áreas.</p>
+        </article>
+
+        <article class="service-card fade-in" style="transition-delay:0.64s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3>Contrato Recorrente</h3>
+          <p>Atendimento técnico recorrente para empresas que precisam de previsibilidade na manutenção elétrica, com equipe dedicada e visitas técnicas programadas.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. DIFERENCIAIS
+  ============================================================ -->
+  <section class="differentials fade-in">
+    <div class="container">
+      <div class="differentials-header">
+        <p class="section-label">Por que Grupo Concretta</p>
+        <h2 class="section-title">Engenharia técnica, <em>não comercial.</em></h2>
+        <p class="section-subtitle">Não vendemos "qualidade" e "compromisso". Operamos um modelo de engenharia elétrica B2B com diferenciais que se traduzem em segurança real para a sua operação.</p>
+      </div>
+
+      <div class="differentials-grid">
+
+        <div class="diff-card fade-in">
+          <div class="diff-number">01</div>
+          <div class="diff-content">
+            <h3>Experiência Industrial Consolidada</h3>
+            <p>Mais de uma década atendendo operações industriais. Cerca de 80% da nossa receita atual vem de demandas elétricas de indústrias, com referências em operações de grande porte como o Shopping Center Iguatemi e a M. Dias Branco.</p>
+          </div>
+        </div>
+
+        <div class="diff-card fade-in" style="transition-delay:0.08s">
+          <div class="diff-number">02</div>
+          <div class="diff-content">
+            <h3>Velocidade Com Qualidade Técnica</h3>
+            <p>Mobilização ágil sem comprometer execução. Equipe própria, processo padronizado e cronograma realista para reduzir o tempo de exposição da sua operação ao risco elétrico.</p>
+          </div>
+        </div>
+
+        <div class="diff-card fade-in" style="transition-delay:0.16s">
+          <div class="diff-number">03</div>
+          <div class="diff-content">
+            <h3>Atendimento Consultivo</h3>
+            <p>Antes de orçar, entendemos a operação. Recomendamos o que protege a sua empresa, não o que aumenta o ticket. Quando o serviço não cabe agora, falamos. Quando cabe, entregamos.</p>
+          </div>
+        </div>
+
+        <div class="diff-card fade-in" style="transition-delay:0.24s">
+          <div class="diff-number">04</div>
+          <div class="diff-content">
+            <h3>Atuação Recorrente De Longo Prazo</h3>
+            <p>Estamos preparados para ser o seu time elétrico ao longo dos anos. Manutenção, adequação e expansão com a mesma equipe técnica, com histórico preservado e contexto operacional acumulado.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. GALERIA - obras executadas
+  ============================================================ -->
+  <section class="gallery fade-in">
+    <div class="container">
+      <p class="section-label" style="justify-content:center; display:inline-flex;">Portfólio técnico</p>
+      <h2 class="section-title">Atuação em operações reais.</h2>
+      <p class="section-subtitle">Imagens de obras, manutenções e ensaios técnicos executados pela equipe do Grupo Concretta em indústrias, comércios e edifícios.</p>
+
+      <div class="carousel-wrapper" aria-label="Galeria de obras executadas pelo Grupo Concretta">
+        <button class="carousel-btn carousel-prev" aria-label="Obra anterior">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/subestacao.webp" alt="Ensaio técnico em transformador de subestação" width="800" height="600" />
+              <div class="carousel-caption"><span>Subestação</span><strong>Ensaio de isolamento em transformador industrial</strong></div>
+            </div>
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/aterramento.webp" alt="Medição de aterramento com terrômetro digital" width="800" height="600" />
+              <div class="carousel-caption"><span>Aterramento</span><strong>Medição de resistência com terrômetro digital</strong></div>
+            </div>
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/operacao-noturna.webp" alt="Equipe técnica em operação elétrica noturna" width="800" height="600" />
+              <div class="carousel-caption"><span>Disponibilidade</span><strong>Operação técnica em janela noturna</strong></div>
+            </div>
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/edificio-comercial.webp" alt="Adequação elétrica em edifício comercial na Beira Mar" width="800" height="600" />
+              <div class="carousel-caption"><span>Edifício comercial</span><strong>Adequação elétrica em empreendimento de grande porte</strong></div>
+            </div>
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/obra-comercial.webp" alt="Equipe Concretta em obra comercial" width="800" height="600" />
+              <div class="carousel-caption"><span>Comércio</span><strong>Instalação elétrica em empreendimento comercial</strong></div>
+            </div>
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/instalacao-subestacao.webp" alt="Instalação de subestação com guindaste" width="800" height="600" />
+              <div class="carousel-caption"><span>Execução</span><strong>Montagem de estrutura de subestação aérea</strong></div>
+            </div>
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/painel-eletrico.webp" alt="Quadro elétrico técnico montado pela Concretta" width="800" height="600" />
+              <div class="carousel-caption"><span>Quadro elétrico</span><strong>Montagem técnica de painel de comando</strong></div>
+            </div>
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/spda.webp" alt="Execução de aterramento e SPDA" width="800" height="600" />
+              <div class="carousel-caption"><span>SPDA</span><strong>Execução de malha de aterramento</strong></div>
+            </div>
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/obra-altura.webp" alt="Equipe técnica em trabalho de altura" width="800" height="600" />
+              <div class="carousel-caption"><span>Trabalho em altura</span><strong>Intervenção elétrica em fachada de edifício</strong></div>
+            </div>
+            <div class="carousel-slide">
+              <img loading="lazy" src="img/equipe-obra.webp" alt="Equipe uniformizada do Grupo Concretta em obra" width="800" height="600" />
+              <div class="carousel-caption"><span>Equipe técnica</span><strong>Operação em obra com EPI completo</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn carousel-next" aria-label="Próxima obra">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots" aria-label="Páginas da galeria"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       8. PROCESSO
+  ============================================================ -->
+  <section class="process fade-in">
+    <div class="container">
+      <div class="process-header">
+        <p class="section-label">Como atendemos</p>
+        <h2 class="section-title">Um processo técnico, <em>do diagnóstico à continuidade.</em></h2>
+        <p class="section-subtitle">Antes de orçar, entendemos a operação. Depois de entregar, mantemos. É assim que protegemos a continuidade técnica da sua empresa.</p>
+      </div>
+
+      <div class="process-grid">
+
+        <div class="process-step fade-in">
+          <div class="process-num">1</div>
+          <h4>Análise da demanda</h4>
+          <p>Entendemos o cenário, o tipo de operação, o risco atual e a urgência técnica do que precisa ser resolvido.</p>
+        </div>
+
+        <div class="process-step fade-in" style="transition-delay:0.08s">
+          <div class="process-num">2</div>
+          <h4>Diagnóstico em campo</h4>
+          <p>Visita técnica para avaliar a estrutura elétrica existente, identificar pontos críticos e dimensionar a intervenção.</p>
+        </div>
+
+        <div class="process-step fade-in" style="transition-delay:0.16s">
+          <div class="process-num">3</div>
+          <h4>Proposta técnica</h4>
+          <p>Escopo claro, responsabilidade técnica, cronograma realista e foco em redução de risco para a operação.</p>
+        </div>
+
+        <div class="process-step fade-in" style="transition-delay:0.24s">
+          <div class="process-num">4</div>
+          <h4>Execução acompanhada</h4>
+          <p>Equipe técnica em campo, ART emitida, controle de etapas e foco em segurança operacional durante a obra.</p>
+        </div>
+
+        <div class="process-step fade-in" style="transition-delay:0.32s">
+          <div class="process-num">5</div>
+          <h4>Continuidade técnica</h4>
+          <p>Suporte recorrente para manutenção, adequação e expansão. A engenharia continua depois da entrega.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       9. FAQ
+  ============================================================ -->
+  <section class="faq fade-in">
+    <div class="container">
+      <div class="faq-header">
+        <p class="section-label">Dúvidas frequentes</p>
+        <h2 class="section-title">Antes do próximo passo.</h2>
+        <p class="section-subtitle">As perguntas que mais ouvimos de quem precisa contratar engenharia elétrica para uma operação que não pode parar.</p>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Em quanto tempo vocês conseguem fazer o diagnóstico técnico?</button>
+        <div class="faq-answer"><p>O primeiro contato é técnico e consultivo. Após uma conversa inicial, agendamos a visita em campo conforme a urgência do cenário. Para demandas críticas (risco de parada, fiscalização iminente ou problema em subestação), mobilizamos com prioridade.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">A Concretta atende fora de Fortaleza?</button>
+        <div class="faq-answer"><p>Sim. Atendemos demandas elétricas industriais, comerciais e prediais em Fortaleza e região, com capacidade técnica para mobilização em obras fora da capital conforme o escopo do projeto. Fale com o nosso comercial técnico para validarmos a viabilidade.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Vocês emitem ART e documentação técnica completa?</button>
+        <div class="faq-answer"><p>Sim. Toda obra contratada é executada sob responsabilidade técnica registrada, com ART emitida no CREA, projeto técnico, laudos quando aplicáveis e documentação para apresentação em fiscalização ou auditoria.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Trabalham com regime de manutenção recorrente?</button>
+        <div class="faq-answer"><p>Sim. Operamos contratos de manutenção elétrica preventiva e preditiva para indústrias, comércios e edifícios. É a modalidade ideal para empresas que querem trocar emergência por previsibilidade técnica e financeira.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Atendem exigências do Corpo de Bombeiros, MTE e concessionária?</button>
+        <div class="faq-answer"><p>Sim. Realizamos adequação elétrica para conformidade com as exigências aplicáveis: SPDA e aterramento (normas técnicas), adequação para inspeção do Corpo de Bombeiros, conformidade com normas regulamentadoras do Ministério do Trabalho (NR-10, por exemplo) e regularização junto à concessionária local.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Atendem só indústria ou também comércio e edifícios?</button>
+        <div class="faq-answer"><p>Atendemos indústrias, comércios, edifícios comerciais e condomínios. A indústria responde pela maior parte da nossa receita atual (cerca de 80%), o que se reflete em maturidade técnica para qualquer operação que dependa de estrutura elétrica robusta.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">Como funciona o processo comercial após o contato?</button>
+        <div class="faq-answer"><p>Você preenche o formulário, nosso time técnico-comercial entra em contato para entender o cenário, agendamos a visita em campo quando necessário e apresentamos a proposta técnica com escopo, cronograma e responsabilidade técnica claramente definidos. Sem volume genérico, sem orçamento descontextualizado.</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       11. FORMULÁRIO
+  ============================================================ -->
+  <section class="form-section fade-in" id="formulario">
+    <div class="container">
+      <p class="section-label">Próximo passo técnico</p>
+      <h2 class="section-title" style="color: var(--white)">Sua empresa precisa de uma solução elétrica <em>segura, técnica e bem executada?</em></h2>
+      <p class="section-subtitle">Solicite uma análise inicial e entenda o melhor caminho para proteger sua operação, reduzir riscos elétricos e manter sua estrutura em conformidade. Nossa equipe técnica responde em até 24h úteis.</p>
+
+      <!-- Indicador de progresso -->
+      <div class="steps-indicator" aria-label="Progresso do formulário">
+        <div class="step-item active" id="stepItem1">
+          <div class="step-circle active" id="stepCircle1">1</div>
+          <span class="step-label">Contato</span>
+        </div>
+        <div class="step-connector"><div class="step-connector-fill" id="stepConnector"></div></div>
+        <div class="step-item" id="stepItem2">
+          <div class="step-circle" id="stepCircle2">2</div>
+          <span class="step-label">Demanda</span>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <form class="form-card" id="leadForm" onsubmit="return false;" novalidate>
+
+        <!-- ETAPA 1 -->
+        <div class="form-step active" id="formStep1" role="group" aria-labelledby="step1heading">
+          <h3 class="form-step-title" id="step1heading">Dados de contato</h3>
+
+          <div class="form-group">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: Carlos Andrade" autocomplete="name" required />
+            <span class="error-msg" id="nomeError">Por favor, insira seu nome completo.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="empresa">Empresa *</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Ex: Indústria Alimentícia Ltda" autocomplete="organization" required />
+            <span class="error-msg" id="empresaError">Por favor, insira o nome da empresa.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail corporativo *</label>
+            <input type="email" id="email" name="email" placeholder="seu.nome@empresa.com.br" autocomplete="email" required />
+            <span class="error-msg" id="emailError">Por favor, insira um e-mail válido.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp *</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(85) 9 0000-0000" autocomplete="tel" required />
+            <span class="error-msg" id="whatsappError">Por favor, insira um WhatsApp válido.</span>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary" onclick="nextStep()">Continuar →</button>
+          </div>
+        </div>
+
+        <!-- ETAPA 2 -->
+        <div class="form-step" id="formStep2" role="group" aria-labelledby="step2heading">
+          <h3 class="form-step-title" id="step2heading">Sobre a sua demanda</h3>
+
+          <div class="form-group">
+            <label for="terreno">Sua operação é *</label>
+            <select id="terreno" name="terreno" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="industria">Indústria</option>
+              <option value="comercio">Comércio</option>
+              <option value="edificio">Edifício comercial</option>
+              <option value="condominio">Condomínio</option>
+              <option value="outro">Outro tipo de empresa</option>
+            </select>
+            <span class="error-msg" id="terrenoError">Por favor, selecione uma opção.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="projeto">Qual serviço você precisa? *</label>
+            <select id="projeto" name="projeto" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="projeto_eletrico">Projeto elétrico</option>
+              <option value="subestacao">Subestação (execução, adequação ou manutenção)</option>
+              <option value="spda">SPDA (proteção contra descargas)</option>
+              <option value="aterramento">Aterramento</option>
+              <option value="adequacao">Adequação elétrica / fiscalização</option>
+              <option value="manutencao">Manutenção elétrica recorrente</option>
+              <option value="carregador">Carregadores elétricos</option>
+              <option value="avaliacao">Avaliação técnica geral</option>
+              <option value="multiplos">Múltiplos serviços</option>
+            </select>
+            <span class="error-msg" id="projetoError">Por favor, selecione uma opção.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="cidade">Cidade / Estado *</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Ex: Fortaleza, CE" required />
+            <span class="error-msg" id="cidadeError">Por favor, insira sua cidade.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="renda">Natureza da demanda *</label>
+            <select id="renda" name="renda" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="preventiva">Preventiva / manutenção recorrente</option>
+              <option value="corretiva">Corretiva / emergencial</option>
+              <option value="expansao">Expansão / nova obra</option>
+              <option value="adequacao_fiscalizacao">Adequação para fiscalização</option>
+              <option value="diagnostico">Diagnóstico técnico / análise inicial</option>
+            </select>
+            <span class="error-msg" id="rendaError">Por favor, selecione uma opção.</span>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-back" onclick="prevStep()">← Voltar</button>
+            <button type="submit" class="btn btn-primary" onclick="submitForm()">Solicitar análise →</button>
+          </div>
+        </div>
+
+        <!-- SUCESSO -->
+        <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+          <div class="success-icon">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>Solicitação recebida.</h3>
+          <p>Nossa equipe técnica vai analisar o seu cenário e entrar em contato pelo WhatsApp em até 24 horas úteis com os próximos passos.</p>
+        </div>
+
+      </form>
+
+      <!-- Trust badges -->
+      <div class="trust-badges">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Engenharia elétrica com ART
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Seus dados são tratados com sigilo
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Atendimento consultivo
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Resposta em até 24h úteis
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       12. FOOTER
+  ============================================================ -->
+  <footer>
+    <img src="img/logo-light.webp" alt="Grupo Concretta" class="footer-logo-img" width="170" height="128" />
+    <p class="footer-tagline">Engenharia de verdade</p>
+    <div class="footer-divider"></div>
+
+    <div class="footer-info">
+      <div class="footer-info-item">
+        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Fortaleza · Ceará</span>
+      </div>
+      <div class="footer-info-item">
+        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Atendimento técnico via WhatsApp</span>
+      </div>
+      <div class="footer-info-item">
+        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        <span>Engenharia elétrica industrial · CREA · ART</span>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2026 Grupo Concretta LTDA. Todos os direitos reservados.</p>
+    <p class="footer-dev">Desenvolvido por <a href="https://m2black.com.br" target="_blank" rel="noopener">M² BLACK</a></p>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    'use strict';
+
+    /* FADE-IN */
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    fadeEls.forEach(el => observer.observe(el));
+
+    /* FORMULÁRIO MULTI-STEP */
+    let currentStep = 1;
+
+    function nextStep() {
+      if (!validateStep1()) return;
+      currentStep = 2;
+      document.getElementById('formStep1').classList.remove('active');
+      document.getElementById('formStep2').classList.add('active');
+      updateStepIndicator();
+    }
+
+    function prevStep() {
+      currentStep = 1;
+      document.getElementById('formStep2').classList.remove('active');
+      document.getElementById('formStep1').classList.add('active');
+      updateStepIndicator();
+    }
+
+    function updateStepIndicator() {
+      const c1 = document.getElementById('stepCircle1');
+      const c2 = document.getElementById('stepCircle2');
+      const i1 = document.getElementById('stepItem1');
+      const i2 = document.getElementById('stepItem2');
+      const conn = document.getElementById('stepConnector');
+
+      if (currentStep === 2) {
+        c1.classList.remove('active'); c1.classList.add('complete');
+        i1.classList.remove('active'); i1.classList.add('complete');
+        c2.classList.add('active');
+        i2.classList.add('active');
+        conn.style.width = '100%';
+      } else {
+        c1.classList.add('active'); c1.classList.remove('complete');
+        i1.classList.add('active'); i1.classList.remove('complete');
+        c2.classList.remove('active');
+        i2.classList.remove('active');
+        conn.style.width = '0%';
+      }
+    }
+
+    function validateStep1() {
+      let valid = true;
+      const nome = document.getElementById('nome');
+      const empresa = document.getElementById('empresa');
+      const email = document.getElementById('email');
+      const whatsapp = document.getElementById('whatsapp');
+
+      if (nome.value.trim().length < 3) { showError(nome, 'nomeError'); valid = false; }
+      else { clearError(nome, 'nomeError'); }
+
+      if (empresa.value.trim().length < 2) { showError(empresa, 'empresaError'); valid = false; }
+      else { clearError(empresa, 'empresaError'); }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value.trim())) { showError(email, 'emailError'); valid = false; }
+      else { clearError(email, 'emailError'); }
+
+      if (whatsapp.value.replace(/\D/g, '').length < 10) { showError(whatsapp, 'whatsappError'); valid = false; }
+      else { clearError(whatsapp, 'whatsappError'); }
+
+      return valid;
+    }
+
+    function validateStep2() {
+      let valid = true;
+      const terreno = document.getElementById('terreno');
+      const projeto = document.getElementById('projeto');
+      const cidade = document.getElementById('cidade');
+      const renda = document.getElementById('renda');
+
+      if (!terreno.value) { showError(terreno, 'terrenoError'); valid = false; }
+      else { clearError(terreno, 'terrenoError'); }
+
+      if (!projeto.value) { showError(projeto, 'projetoError'); valid = false; }
+      else { clearError(projeto, 'projetoError'); }
+
+      if (cidade.value.trim().length < 2) { showError(cidade, 'cidadeError'); valid = false; }
+      else { clearError(cidade, 'cidadeError'); }
+
+      if (!renda.value) { showError(renda, 'rendaError'); valid = false; }
+      else { clearError(renda, 'rendaError'); }
+
+      return valid;
+    }
+
+    function showError(input, errId) {
+      input.classList.add('error');
+      document.getElementById(errId).classList.add('show');
+    }
+    function clearError(input, errId) {
+      input.classList.remove('error');
+      document.getElementById(errId).classList.remove('show');
+    }
+
+    /* WEBHOOK ATENDERBEM — preservado do template M² Black */
+    const WEBHOOK_URL = 'https://m2black.atenderbem.com/webhookcapture/capture/e713ba340f1d43f9a97f20faab1afa7f';
+
+    (function persistUTMs() {
+      const params = new URLSearchParams(window.location.search);
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']
+        .forEach(k => {
+          const v = params.get(k);
+          if (v !== null) sessionStorage.setItem(k, v);
+        });
+    })();
+
+    function getUTMs() {
+      return {
+        utm_source:   sessionStorage.getItem('utm_source')   || '',
+        utm_medium:   sessionStorage.getItem('utm_medium')   || '',
+        utm_campaign: sessionStorage.getItem('utm_campaign') || '',
+        utm_term:     sessionStorage.getItem('utm_term')     || '',
+        utm_content:  sessionStorage.getItem('utm_content')  || ''
+      };
+    }
+
+    function getDateTimeBR() {
+      const d = new Date();
+      const pad = n => String(n).padStart(2, '0');
+      return {
+        Data:    `${pad(d.getDate())}/${pad(d.getMonth() + 1)}/${d.getFullYear()}`,
+        Horario: `${pad(d.getHours())}:${pad(d.getMinutes())}`
+      };
+    }
+
+    function getSelectLabel(id) {
+      const el = document.getElementById(id);
+      if (!el || !el.selectedOptions || !el.selectedOptions.length) return '';
+      const opt = el.selectedOptions[0];
+      if (!opt.value) return '';
+      return (opt.text || '').trim();
+    }
+
+    function submitForm() {
+      if (!validateStep2()) return;
+
+      const submitBtn = document.querySelector('#formStep2 .btn-primary');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Enviando...';
+      submitBtn.disabled = true;
+
+      const whatsappDigits = document.getElementById('whatsapp').value.replace(/\D/g, '');
+
+      const dt = getDateTimeBR();
+      const utms = getUTMs();
+
+      const payload = {
+        // Padrão AtenderBem
+        Nome:     document.getElementById('nome').value.trim(),
+        Email:    document.getElementById('email').value.trim(),
+        WhatsApp: whatsappDigits,
+
+        // Customizadas - adaptadas ao formulário B2B do Grupo Concretta
+        empresa:           document.getElementById('empresa').value.trim(),
+        tipo_operacao:     getSelectLabel('terreno'),
+        servico_demandado: getSelectLabel('projeto'),
+        cidade:            document.getElementById('cidade').value.trim(),
+        natureza_demanda:  getSelectLabel('renda'),
+
+        // Metadados
+        Nome_do_site:   'Grupo Concretta',
+        Nome_da_pagina: document.title,
+        URL_da_pagina:  window.location.href,
+        Data:           dt.Data,
+        Horario:        dt.Horario,
+
+        // UTMs
+        utm_source:   utms.utm_source,
+        utm_medium:   utms.utm_medium,
+        utm_campaign: utms.utm_campaign,
+        utm_term:     utms.utm_term,
+        utm_content:  utms.utm_content
+      };
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'lead_form_submitted',
+        formName: 'analise_tecnica_concretta',
+        leadData: payload
+      });
+
+      fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(res => {
+        if (!res.ok) throw new Error('Erro no envio');
+        showSuccess();
+      })
+      .catch((err) => {
+        console.warn('Webhook AtenderBem falhou:', err);
+        showSuccess();
+      });
+
+      function showSuccess() {
+        document.getElementById('formStep2').classList.remove('active');
+        document.getElementById('formSuccess').classList.add('show');
+        document.getElementById('stepCircle2').classList.add('complete');
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    }
+
+    /* CARROSSEL */
+    (function initCarousel() {
+      const track = document.getElementById('carouselTrack');
+      const dotsContainer = document.getElementById('carouselDots');
+      const slides = track.querySelectorAll('.carousel-slide');
+      const prevBtn = document.querySelector('.carousel-prev');
+      const nextBtn = document.querySelector('.carousel-next');
+
+      let current = 0;
+      let autoplayTimer;
+
+      function getSlidesPerView() {
+        return window.innerWidth <= 680 ? 1 : 3;
+      }
+
+      function buildDots() {
+        dotsContainer.innerHTML = '';
+        const pages = Math.ceil(slides.length / getSlidesPerView());
+        for (let i = 0; i < pages; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', `Página ${i + 1}`);
+          dot.addEventListener('click', () => { resetAutoplay(); goTo(i); });
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function getSlideWidth() {
+        const perView = getSlidesPerView();
+        const gap = 20;
+        return (track.parentElement.offsetWidth - gap * (perView - 1)) / perView;
+      }
+
+      function goTo(page) {
+        const perView = getSlidesPerView();
+        const maxPage = Math.ceil(slides.length / perView) - 1;
+        current = Math.max(0, Math.min(page, maxPage));
+        const slideW = getSlideWidth();
+        const gap = 20;
+        track.style.transform = `translateX(-${current * (slideW + gap) * perView}px)`;
+        document.querySelectorAll('.dot').forEach((d, i) => {
+          d.classList.toggle('active', i === current);
+        });
+      }
+
+      prevBtn.addEventListener('click', () => { resetAutoplay(); goTo(current - 1); });
+      nextBtn.addEventListener('click', () => { resetAutoplay(); goTo(current + 1); });
+
+      function startAutoplay() {
+        autoplayTimer = setInterval(() => {
+          const perView = getSlidesPerView();
+          const maxPage = Math.ceil(slides.length / perView) - 1;
+          goTo(current < maxPage ? current + 1 : 0);
+        }, 5000);
+      }
+      function resetAutoplay() { clearInterval(autoplayTimer); startAutoplay(); }
+
+      window.addEventListener('resize', () => {
+        buildDots();
+        goTo(0);
+      });
+
+      buildDots();
+      goTo(0);
+      startAutoplay();
+    })();
+
+    /* MÁSCARA WHATSAPP */
+    document.getElementById('whatsapp').addEventListener('input', function() {
+      let v = this.value.replace(/\D/g, '').slice(0, 11);
+      if (v.length > 6) v = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+      else if (v.length > 2) v = `(${v.slice(0,2)}) ${v.slice(2)}`;
+      else if (v.length > 0) v = `(${v}`;
+      this.value = v;
+    });
+
+    /* CTA FIXO MOBILE */
+    (function() {
+      const mobileCta = document.getElementById('mobileCta');
+      const formSection = document.getElementById('formulario');
+      if (!mobileCta || !formSection) return;
+
+      window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        const formRect = formSection.getBoundingClientRect();
+        const formVisible = formRect.top < window.innerHeight && formRect.bottom > 0;
+
+        if (scrollY > 400 && !formVisible) {
+          mobileCta.classList.add('visible');
+        } else {
+          mobileCta.classList.remove('visible');
+        }
+      }, { passive: true });
+    })();
+
+    /* COUNTER ANIMADO */
+    (function() {
+      const counters = document.querySelectorAll('.proof-number[data-count]');
+      let animated = false;
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !animated) {
+            animated = true;
+            counters.forEach(counter => {
+              const target = parseInt(counter.dataset.count);
+              const raw = counter.textContent;
+              const suffix = raw.replace(/[\d+]/g, '').trim();
+              const prefix = raw.trim().startsWith('+') ? '+' : '';
+              let current = 0;
+              const step = Math.max(1, Math.ceil(target / 40));
+              const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                  current = target;
+                  clearInterval(timer);
+                }
+                counter.textContent = prefix + current + (suffix ? ' ' + suffix : '');
+              }, 30);
+            });
+            counterObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counters.forEach(c => counterObserver.observe(c));
+    })();
+
+  </script>
+
+  <!-- CTA Fixo Mobile -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="#formulario" class="btn btn-primary">Solicitar Análise Técnica</a>
+  </div>
+
+</body>
+</html>
